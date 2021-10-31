@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <title>HTML</title>
+    <style>
+        body {  
+            background-color: rgb(6, 10, 10);
+            display: grid;
+            grid-template-columns: 20px 1fr 20px;
+            grid-template-rows: 50px 1fr 40px 80px;
+        }
+        h1 {
+            color: rgb(245, 241, 241);
+            font-size: 30px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        a:hover{
+            color: rgb(202, 79, 250);
+        }
+        header {
+            justify-self: center;
+            align-self: center;
+            grid-column-start: 2;
+            grid-row-start: 1;
+        }
+        main {
+            justify-self: center;
+            align-self: center;
+            grid-column-start: 2;
+            grid-row-start: 2;
+        }
+        img {
+            filter: grayscale(100%);
+
+        }
+        img:hover {
+            filter: grayscale(0%);
+            transition: .5s ease;
+        }
+        div {
+            justify-self: center;
+            align-self: center;
+            grid-column-start: 2;
+            grid-row-start: 3;
+        }
+        footer{
+            grid-column-start: 2;
+            grid-row-start: 4;
+            justify-self: center;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Curso de HTML</h1>
+    </header>
+    <main>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/epDCjksKMok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </main>
+    <div>
+        <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dlAnJ_jJtV29RFxnPHDuk9o" target="_blank" rel="external">Veja o curso completo</a>
+    </div>
+    <footer>
+        <a href="../index.html" rel="prev">
+            <img src="../imagens/voltar.png" alt="botao voltar">
+        </a>
+    </footer>
+</body>
+</html>

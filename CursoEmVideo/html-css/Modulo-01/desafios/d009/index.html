@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Meus vídeos</title>
+    <style>
+        body {
+            background-color: rgb(6, 10, 10);
+            display: grid;
+            grid-template-columns: 20px 1fr 20px;
+            grid-template-rows: 50px 1fr 20px;
+        }
+        h1 {
+            color: rgb(245, 241, 241);
+            font-size: 30px;
+        }
+        header {
+            justify-self: center;
+            align-self: center;
+            grid-column-start: 2;
+            grid-row-start: 1;
+        }
+        main {
+            justify-self: center;
+            align-self: center;
+            grid-column-start: 2;
+            grid-row-start: 2;
+        }
+        img {
+            filter: grayscale(100%);
+        }
+        img:hover {
+            filter: grayscale(0%);
+            transition: .5s ease;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Videos legais para assistir</h1>
+    </header>
+    <main>
+        <p>
+            <a href="paginas/pagina01.html" rel="next"><img src="imagens/thumb-html.png" alt="logo html"></a>
+            <a href="paginas/pagina02.html" rel="next"><img src="imagens/thumb-js.png" alt="logo javascript"></a>
+            <br>
+            <a href="paginas/pagina03.html" rel="next"><img src="imagens/thumb-hardware.png" alt="logo hardware"></a>
+            <a href="paginas/pagina04.html" rel="next"><img src="imagens/thumb-python.png" alt="logo py"></a>
+        </p>
+    </main>
+
+</body>
+</html>
