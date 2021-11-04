@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        html {
+            box-sizing: content-box;
+            height: 100%;
+        }
+        body {
+            margin: 0px;
+            box-sizing: content-box;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div#area {
+            background-image: linear-gradient(to right, #00f7ff, #f870c4);
+            box-sizing: content-box;
+            padding: 10px;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            /*Fonte*/
+            font-size: 1.8em;
+            font-weight: bold;
+            color: whitesmoke;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.384);
+
+            border: 5px solid #10006d;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+
+    <script>
+        var area  = window.document.getElementById('area')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+
+        function clicar() {
+            area.innerText = 'Clicou!'
+        }
+        function entrar() {
+            area.innerText = 'Entrou!'
+        }
+        function sair() {
+            area.innerText = 'Saiu!'
+        }
+        
+    </script>
+</body>
+</html>
