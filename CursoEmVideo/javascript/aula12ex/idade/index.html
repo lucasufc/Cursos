@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    <header>
-
-    </header>
     <section>
         <div>
+            <header>
+                <h1>Verificador de idade</h1>
+            </header>
             Ano de Nascimento: <input type="number" name="idade" id="idade">
         </div>
         <div>
@@ -21,16 +22,17 @@
                 <input type="radio" name="check" id="mulher">
                 <label for="mulher">Feminino</label>
             </p>
-            <p>
-                <input type="button" value="Verificar">
+            <p id="seletor">
+                <input type="button" value="verificar" onclick="verificar()" id="verificador">
             </p>
         </div>
         <div id="resp">
-            
+            Preencha os dados acima para ver o resultado!
         </div>
     </section>
     <footer>
-
+        <p>Desenvolvido por <a href="https://github.com/lucasufc" target="_blank" rel="author">Lucas Martins</a></p>
     </footer>
+    <script src="scripts/app.js"></script>
 </body>
 </html>
