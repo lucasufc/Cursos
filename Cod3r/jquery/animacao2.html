@@ -28,6 +28,45 @@
     <div>Animar!</div>
 
     <script>
-        // ...
+        function alterarLargura(target, valor, duracao) {
+            return new Promise((resolve, reject) => {
+                try{
+                    target.animate({width: `+=${valor}`}, duracao)
+                    resolve(target)
+                } catch(e) {
+                    reject(e)
+                }
+            })
+        }
+
+        function moverDiagonal(target ,valor, duracao) {
+            return new Promise((resolve, reject) => {
+                try{
+                    target.animate({top: `+=${valor}`,left: `+=${valor}`}, duracao)
+                    resolve(target)
+                } catch(e) {
+                    reject(e)
+                }
+            })
+        }
+
+        function girar(target,valor, duracao) {
+            return new Promise ((resolve, reject) => {
+                try{
+                    target.animate({transform: `+=${valor}`},
+                    { step: function(valor){
+                            $(this).css('transform', `rotate(${valor}deg)`)
+                        }
+                    ,duration: duracao}, 'linear')
+                    resolve(target)
+                } catch(e) {
+                    reject(e)
+                }
+            })
+        }
+        alterarLargura($('div'), 300, 100)
+            .then(target => alterarLargura(target, -300, 'slow'))
+            .then(target => moverDiagonal(target,300, 600))
+            .then(target => girar(target, 3300, 3000))
     </script>
 </body>
