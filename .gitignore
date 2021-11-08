@@ -349,3 +349,7 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 Cod3r/gulp/.DS_Store
+.vscode/settings.json
+Cod3r/jquery/.DS_Store
+Cod3r/jquery/js/.DS_Store
+Cod3r/jquery/js/jquery.js
