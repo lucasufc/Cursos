@@ -64,9 +64,11 @@
                 }
             })
         }
+        
         alterarLargura($('div'), 300, 100)
             .then(target => alterarLargura(target, -300, 'slow'))
             .then(target => moverDiagonal(target,300, 600))
             .then(target => girar(target, 3300, 3000))
+            .catch(console.log)
     </script>
 </body>
