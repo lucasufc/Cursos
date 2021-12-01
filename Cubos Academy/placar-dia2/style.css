@@ -1,0 +1,38 @@
+*{
+    padding: 0px; margin: 0px;
+}
+html {
+    width: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.placar{
+    background-color: #222;
+    width: 60%;
+    color: whitesmoke;
+    padding: 50px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.sets-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.metade{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
