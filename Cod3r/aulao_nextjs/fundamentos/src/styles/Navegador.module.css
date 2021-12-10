@@ -1,0 +1,12 @@
+.navegador {
+    background-color: #770e23;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px 5px #0000002b;
+}
+.navegador:hover {
+    background-color: #f51b46;
+    box-shadow: 0px 0px 15px 5px #f51b4762;
+}
