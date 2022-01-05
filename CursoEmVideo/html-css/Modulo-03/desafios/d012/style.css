@@ -1,16 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-size: 1em;
 }
 html {
     min-height: 100vh;
 }
 body {
     height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-p {
-    
+
+h1 {
+    font-family: 'Passion One', cursive;
+    font-size: 8vw;
 }
 
 a {
@@ -18,6 +24,7 @@ a {
     color: white;
     font-weight: bold;
     text-decoration: none;
+    
 }
 a:hover {
     text-decoration: underline;
@@ -35,17 +42,23 @@ header {
 section {
     padding: 10vh 30px;
     line-height: 2em;
+    font-family: 'Sriracha', cursive;
+    font-size: 3.5vw;
 }
-section.normal {
-
+section > p {
+    padding-bottom: 2em;
 }
 section.imagem {
     background-color: brown;
     color: white;
+    box-shadow: inset 6px 6px 13px 7px rgba(0, 0, 0, 0.541);
 }
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.116);
-    max-width: 400px;
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+
 }
 footer {
     background-color: black;
@@ -55,4 +68,13 @@ footer {
     padding: 10px;
 }
 
+section#img01{
+    background-image: url('../d012/imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section#img02{
+    background-image: url('../d012/imagens/background002.jpg');
 
+}
