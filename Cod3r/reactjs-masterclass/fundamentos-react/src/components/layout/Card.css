@@ -1,0 +1,53 @@
+.Card {
+    min-width: 300px;
+    min-height: 300px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    
+    margin: 20px;
+
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.Card .Title {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 100%;
+
+    margin-bottom: 15px;
+}
+
+.Card .Conteudo {
+    margin: 0px 15px 0px 15px;
+
+    color: #222;
+    font-size: 0.75rem;
+}
+
+.Card .Conteudo ul {
+    list-style: none;
+    margin-top: 5px;
+    text-align: start;
+    font-family: monospace;
+    font-size: 0.9rem;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.Card .Conteudo li {
+    padding: 5px 10px;
+}
+
+.Card .Conteudo li:nth-child(2n+1) {
+    background-color: #ddd;
+    color: black;
+}
