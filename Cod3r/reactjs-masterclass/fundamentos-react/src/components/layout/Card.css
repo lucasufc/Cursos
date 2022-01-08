@@ -4,7 +4,7 @@
     
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 
     
@@ -15,7 +15,7 @@
     background-color: #f5f5f5;
 
     overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .Card .Title {
@@ -23,15 +23,16 @@
     color: white;
     padding: 10px;
     width: 100%;
-
-    margin-bottom: 15px;
+    font-weight: 200;
+    margin-top: 15px;
 }
 
 .Card .Conteudo {
-    margin: 0px 15px 0px 15px;
+    margin: 15px 15px 0px 15px;
 
     color: #222;
-    font-size: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: 300;
 }
 
 .Card .Conteudo ul {

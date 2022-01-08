@@ -14,13 +14,13 @@ import CondicionalComIf from './components/basicos/CondicionalComIf'
 export default function App() {
     return(
         <div className='App' >
-            <Card titulo="#01 - Primeiro Componente">
+            <Card titulo="#01 - Primeiro Componente" color="#92B06A">
                 <Primeiro>Olá React!</Primeiro>
             </Card>
-            <Card titulo="#02 - Componente com Parâmetros">
+            <Card titulo="#02 - Componente com Parâmetros" color="#FF85CB">
                 <ComParametro titulo="Opa" subtitulo="Epa" />
             </Card>
-            <Card titulo="#03 - Componente com Filhos">
+            <Card titulo="#03 - Componente com Filhos" color="#D96459">
                 <ComFilhos>
                     <ul>
                         <li>Ana</li>
@@ -30,13 +30,13 @@ export default function App() {
                     </ul>
                 </ComFilhos>
             </Card>
-            <Card titulo="#04 - Repetição">
+            <Card titulo="#04 - Repetição" color="#008BBA">
                 <Repeticao/>
             </Card>
-            <Card titulo="#05 - Condicional v1">
+            <Card titulo="#05 - Condicional v1" color="#E94C6F">
                 <Condicional numero={4}/>
             </Card>
-            <Card titulo="#06 - Condicional v2">
+            <Card titulo="#06 - Condicional v2" color="#FA6900">
                 <CondicionalComIf numero={6}/>
             </Card>
         </div>
