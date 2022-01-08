@@ -10,6 +10,11 @@ import ComFilhos from './components/basicos/ComFilhos'
 import Repeticao from './components/basicos/Repeticao'
 import Condicional from './components/basicos/Condicional'
 import CondicionalComIf from './components/basicos/CondicionalComIf'
+import Pai from './components/comunicacao/direta/Pai'
+import Super from './components/comunicacao/indireta/Super'
+import Input from './components/form/Input'
+import Contador from './components/contador/Contador'
+import Mega from './components/mega/Mega'
 
 export default function App() {
     return(
@@ -38,6 +43,21 @@ export default function App() {
             </Card>
             <Card titulo="#06 - Condicional v2" color="#FA6900">
                 <CondicionalComIf numero={6}/>
+            </Card>
+            <Card titulo="#07 - Comunicação Direta" color="#4298B5">
+                <Pai sobrenome="Freitas"/>
+            </Card>
+            <Card titulo="#08 - Comunicação Indireta" color="#011627">
+                <Super color="#011627"/>
+            </Card>
+            <Card titulo="#09 - Input" color="#41EAD4">
+                <Input/>
+            </Card>
+            <Card titulo="#10 - Contador" color="#B91372">
+                <Contador/>
+            </Card>
+            <Card titulo="#11 - Megasena" color="#4D6CFA">
+                <Mega qtdeNumero={8}/>
             </Card>
         </div>
     )
