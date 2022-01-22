@@ -14,6 +14,8 @@ def login():
     if form.validate_on_submit():
         print(form.username.data)
         print(form.password.data)
+    else:
+        print(form.errors)
     return render_template('login.html', form=form)
 
 
