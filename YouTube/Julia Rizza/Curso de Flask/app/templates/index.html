@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}{{super() }} - Index{% endblock %}
+    {% block content %}
+    <h1>Toilter</h1>
+    {% if user %}
+    <p>Bem-vindo ao Toilter, {{ user }}!</p>
+    {% else %}
+    <p>Bem-vindos ao Toilter</p>
+    {% endif %}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename="js/bootstrap.min.js")}}"></script>
+    {% endblock %}
